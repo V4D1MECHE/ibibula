@@ -6,7 +6,7 @@
 @font-face {
   font-family: "Rockstar";
   src: url("/RS RockStar/RS-regular.otf");
-  font-weight: 500;
+  font-weight: 400;
 }
 
 
@@ -24,7 +24,7 @@ body {
 
 select {
     border: none;
-  font-weight: 500;
+  font-weight: 400;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -45,7 +45,7 @@ select {
 
 button {
     border: none;
-  font-weight: 500;
+  font-weight: 400;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -89,7 +89,7 @@ input {
   height: 56px;
   border-radius: 20px;
   border: solid #808080;
-  border-width: 2px;
+  border-width: 1px;
   color: #808080;
 }
 
@@ -152,7 +152,7 @@ flex-direction: column;
 flex-grow: 1;
 align-items: flex-start;
 padding: 0px 8px;
-gap: 0px;
+gap: 2px;
 
 width: 100%;
 
@@ -163,7 +163,7 @@ width: 100%;
     width: 100%;
 
 font-style: normal;
-font-weight: 500;
+font-weight: 400;
 font-size: 24px;
 
 color: #000000;
@@ -175,10 +175,10 @@ color: #000000;
     /* Месье колбасье */
 width: 100%;
 font-style: normal;
-font-weight: 200;
+font-weight: 300;
 font-size: 16px;
 /* identical to box height, or 17px */
-margin-top: 4px;
+margin-top: 6px;
 color: #808080;
 
 
@@ -186,9 +186,9 @@ color: #808080;
 
 .price{
 font-style: normal;
-font-weight: 700;
+font-weight: 600;
 font-size: 32px;
-line-height: normal;
+line-height: 32px;
 
 color: #000000;
 
@@ -213,11 +213,9 @@ footer{
 }
 
 a {
-/* info@ibibula.example */
-
 
 font-style: normal;
-font-weight: 500;
+font-weight: 300;
 font-size: 16px;
 line-height: 22px;
 text-decoration: none;
@@ -225,4 +223,13 @@ text-decoration: none;
 color: #000000;
 
 
+}
+
+.profile-image{
+    height: 56px;
+    aspect-ratio: 1 / 1;
+  
+    border-radius: 20px;
+  
+    object-fit: cover;
 }

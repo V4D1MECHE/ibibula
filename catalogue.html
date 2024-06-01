@@ -12,22 +12,28 @@
 
 <body>
   <header>
-    <img src="frame.svg" class="bi" height="40">
-    <button>Каталог услуг</button>
+      <img src="frame.svg" class="bi" height="40">
+      <div class="button-sequence">
+        <button>Каталог услуг</button>
+    <a> 
+      <img class="profile-image" src="image.png">
+    </a>
+      </div>
+    
+  </header>
+  <header class="catalogue-header">
+    <input placeholder="Введите название услуги">
+    <div class="button-sequence">
+    <select name="categories" id="categories">
+      <option value="">Все категории</option>
+      <option value="Ремонт">Ремонт</option>
+    </select>
+    <button>
+      Поиск
+    </button>
+  </div>
   </header>
   <main>
-    <header class="catalogue-header">
-      <input placeholder="Введите название услуги">
-      <div class="button-sequence">
-      <select name="categories" id="categories">
-        <option value="">Все категории</option>
-        <option value="Ремонт">Ремонт</option>
-      </select>
-      <button>
-        Поиск
-      </button>
-    </div>
-    </header>
   <div class="service-card">
       <img class="little-thumbnail" src="image.png">
       <div class="card-details">
@@ -37,6 +43,15 @@
       </div>
       <button style="width:100%">Заказать</button>
   </div>
+  <div class="service-card">
+    <img class="little-thumbnail" src="image.png">
+    <div class="card-details">
+      <span class="service-name">название услуги</span>
+      <span class="price">цена</span>
+      <span class="worker-name">имя испольнителя</span>
+    </div>
+    <button style="width:100%">Заказать</button>
+</div>
 </main>
   <footer>
     <a href="./README.md">Пользовательское соглашение</a>
