@@ -11,6 +11,7 @@
 
 
 body {
+    word-break: break-all;
   background-color: var(--purple);
   color: var(--text-color) !important;
   font-family: "Montserrat", "Rockstar", sans-serif;
@@ -53,8 +54,17 @@ button {
   padding: 0px 32px;
   height: 56px;
 
+  text-wrap: nowrap;
+
   background: #fff7bd;
   border-radius: 20px;
+
+}
+
+.delete {
+
+
+  background: #FFBDBD;
 
 }
 
@@ -129,8 +139,8 @@ main {
   padding: 12px;
   gap: 12px;
 
+
   width: 320px;
-  height: 485px;
 
   background: #ffffff;
   box-shadow: 0px 8px 24px rgba(0, 175, 255, 0.25);
@@ -147,21 +157,30 @@ main {
   object-fit: cover;
 }
 
+.big-thumbnail {
+    width: 494px;
+    height: 456px;
+  
+    border-radius: 20px;
+  
+    object-fit: cover;
+  }
+
 .card-details{
 
 display: flex;
 flex-direction: column;
 flex-grow: 1;
 align-items: flex-start;
-padding: 0px 8px;
+padding: 0px 8px 0px;
 gap: 2px;
 
 width: 100%;
 
 }
 
-.service-name{
-    /* Починка шкафа с очень длинным названием */
+.body-text{
+    word-break: break-all;
     width: 100%;
 
 font-style: normal;
@@ -169,18 +188,22 @@ font-weight: 400;
 font-size: 24px;
 
 color: #000000;
-
-
 }
 
-.worker-name{
+.body-text.limited{
+    text-wrap: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+}
+
+.caption-text{
     /* Месье колбасье */
 width: 100%;
 font-style: normal;
 font-weight: 300;
 font-size: 16px;
-/* identical to box height, or 17px */
-margin-top: 6px;
+text-overflow: ellipsis;
+
 color: #808080;
 
 
@@ -191,7 +214,7 @@ font-style: normal;
 font-weight: 600;
 font-size: 32px;
 line-height: 32px;
-
+text-overflow: ellipsis;
 color: #000000;
 
 
@@ -221,7 +244,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 22px;
 text-decoration: none;
-
+text-overflow: ellipsis;
 color: #000000;
 
 
@@ -272,4 +295,37 @@ input[type=submit]{
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
+}
+
+.little-page{
+
+/* Frame 38 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+align-content: center;
+padding: 0px;
+gap: 40px;
+
+
+
+
+}
+
+.infocard{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 12px;
+  
+    width: 494px;
+  
+    background: #ffffff;
+    box-shadow: 0px 8px 24px rgba(0, 175, 255, 0.25);
+    border-radius: 32px;
 }
