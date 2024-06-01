@@ -1,0 +1,228 @@
+:root {
+  --fuchsia: #000000;
+  --purple: #dff5ff;
+}
+
+@font-face {
+  font-family: "Rockstar";
+  src: url("/RS RockStar/RS-regular.otf");
+  font-weight: 500;
+}
+
+
+body {
+  background-color: var(--purple);
+  color: var(--text-color) !important;
+  font-family: "Montserrat", "Rockstar", sans-serif;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+select {
+    border: none;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 32px;
+  gap: 10px;
+  height: 56px;
+
+  background: #dff5ff;
+  border-radius: 20px;
+
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align-last: center;
+}
+
+button {
+    border: none;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 32px;
+  height: 56px;
+
+  background: #fff7bd;
+  border-radius: 20px;
+
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  gap: 48px;
+
+  width: 95%;
+  height: 80px;
+  max-width: 1400px;
+
+  background: #ffffff;
+  box-shadow: 0px 8px 40px rgba(0, 175, 255, 0.25);
+  border-radius: 32px;
+
+
+}
+
+.catalogue-header {
+  justify-content: center;
+  gap: 16px;
+}
+
+input {
+  display: flex;
+  padding: 24px;
+  flex-grow: 1;
+  height: 56px;
+  border-radius: 20px;
+  border: solid #808080;
+  border-width: 2px;
+  color: #808080;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0px 0px 40px;
+  gap: 40px;
+
+  width: 95%;
+  max-width: 1400px;
+  min-height: 900px;
+
+  border-radius: 32px;
+
+}
+
+.button-sequence {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 12px;
+
+  width: 320px;
+  height: 485px;
+
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 175, 255, 0.25);
+  border-radius: 32px;
+
+}
+
+.little-thumbnail {
+  width: 296px;
+  height: 272px;
+
+  border-radius: 20px;
+
+  object-fit: cover;
+}
+
+.card-details{
+
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+align-items: flex-start;
+padding: 0px 8px;
+gap: 0px;
+
+width: 100%;
+
+}
+
+.service-name{
+    /* Починка шкафа с очень длинным названием */
+    width: 100%;
+
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+
+color: #000000;
+
+
+}
+
+.worker-name{
+    /* Месье колбасье */
+width: 100%;
+font-style: normal;
+font-weight: 200;
+font-size: 16px;
+/* identical to box height, or 17px */
+margin-top: 4px;
+color: #808080;
+
+
+}
+
+.price{
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: normal;
+
+color: #000000;
+
+
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  padding: 12px;
+
+  width: 95%;
+  height: 80px;
+  max-width: 1400px;
+
+  background: #ffffff;
+  box-shadow: 0px 8px 40px rgba(0, 175, 255, 0.25);
+  border-radius: 32px;
+}
+
+a {
+/* info@ibibula.example */
+
+
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+text-decoration: none;
+
+color: #000000;
+
+
+}
